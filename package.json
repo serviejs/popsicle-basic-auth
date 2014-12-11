@@ -1,0 +1,37 @@
+{
+  "name": "popsicle-basic-auth",
+  "version": "0.0.0",
+  "description": "Add basic authentication to Popsicle requests",
+  "main": "popsicle-basic-auth.js",
+  "scripts": {
+    "test": "istanbul cover _mocha -- -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/blakeembrey/popsicle-basic-auth.git"
+  },
+  "keywords": [
+    "popsicle",
+    "plugin",
+    "basic",
+    "authentication",
+    "http"
+  ],
+  "author": {
+    "name": "Blake Embrey",
+    "email": "hello@blakeembrey.com",
+    "url": "http://blakeembrey.me"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blakeembrey/popsicle-basic-auth/issues"
+  },
+  "homepage": "https://github.com/blakeembrey/popsicle-basic-auth",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "istanbul": "^0.3.5",
+    "mocha": "^2.0.1",
+    "nock": "^0.51.0",
+    "popsicle": "^0.1.1"
+  }
+}
