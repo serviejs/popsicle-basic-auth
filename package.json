@@ -31,6 +31,7 @@
   },
   "homepage": "https://github.com/blakeembrey/popsicle-basic-auth",
   "devDependencies": {
+    "es6-promise": "^2.0.1",
     "istanbul": "^0.3.5",
     "mocha": "^2.0.1",
     "nock": "^1.1.0",
