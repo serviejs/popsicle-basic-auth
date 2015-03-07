@@ -16,11 +16,11 @@ npm install popsicle-basic-auth --save
 ## Usage
 
 ```javascript
-var request = require('popsicle');
-var auth    = require('popsicle-basic-auth');
+var request = require('popsicle')
+var auth = require('popsicle-basic-auth')
 
 request('/users.json')
-  .use(auth('blakeembrey', 'hunter2'));
+  .use(auth('blakeembrey', 'hunter2'))
 ```
 
 ## License
