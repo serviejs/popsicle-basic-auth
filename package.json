@@ -1,6 +1,6 @@
 {
   "name": "popsicle-basic-auth",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Add basic authentication to Popsicle requests",
   "main": "popsicle-basic-auth.js",
   "scripts": {
