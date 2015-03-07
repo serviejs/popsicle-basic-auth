@@ -4,16 +4,16 @@
  * @param  {String} str
  * @return {String}
  */
-var btoa = typeof window === 'object' ? window.btoa : function btoa (str) {
-  return new Buffer(str).toString('base64');
-};
-
-function popsicleBasicAuth (username, password) {
-  var authorization = 'Basic ' + btoa(username + ':' + password);
-
-  return function (req) {
-    req.set('Authorization', authorization);
-  };
+var encode = typeof window === 'object' ? /* istanbul ignore next */ window.btoa : function (str) {
+  return new Buffer(str).toString('base64')
 }
 
-module.exports = popsicleBasicAuth;
+module.exports = popsicleBasicAuth
+
+function popsicleBasicAuth (username, password) {
+  var authorization = 'Basic ' + encode(username + ':' + password)
+
+  return function (req) {
+    req.set('Authorization', authorization)
+  }
+}
