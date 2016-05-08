@@ -5,7 +5,7 @@
 [![Build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
 
-Add basic authentication to requests.
+> Add basic authentication to requests.
 
 ## Installation
 

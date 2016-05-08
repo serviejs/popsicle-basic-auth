@@ -13,7 +13,9 @@ module.exports = popsicleBasicAuth
 function popsicleBasicAuth (username, password) {
   var authorization = 'Basic ' + encode(username + ':' + password)
 
-  return function (req) {
+  return function (req, next) {
     req.set('Authorization', authorization)
+
+    return next()
   }
 }
