@@ -21,7 +21,7 @@ describe('popsicle basic auth', function () {
     })
 
     it('should set authorization header', function () {
-      return popsicle('http://example.com')
+      return popsicle.get('http://example.com')
         .use(auth('blakeembrey', 'hunter2'))
     })
   })
