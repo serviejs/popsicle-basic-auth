@@ -1,3 +1,5 @@
+var Buffer = require('safe-buffer').Buffer
+
 /**
  * Native base 64 encoding.
  *
@@ -5,7 +7,7 @@
  * @return {String}
  */
 var encode = typeof window === 'object' ? /* istanbul ignore next */ window.btoa : function (str) {
-  return new Buffer(str).toString('base64')
+  return Buffer.from(str).toString('base64')
 }
 
 module.exports = popsicleBasicAuth

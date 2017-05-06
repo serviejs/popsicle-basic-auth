@@ -4,12 +4,13 @@ require('es6-promise').polyfill()
 
 var popsicle = require('popsicle')
 var nock = require('nock')
+var Buffer = require('safe-buffer').Buffer
 var auth = require('./')
 
 describe('popsicle basic auth', function () {
   describe('authorization header', function () {
     beforeEach(function () {
-      var str = new Buffer('blakeembrey:hunter2').toString('base64')
+      var str = Buffer.from('blakeembrey:hunter2').toString('base64')
 
       nock('http://example.com', {
         reqheaders: {

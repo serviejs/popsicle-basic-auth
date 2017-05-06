@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Add basic authentication to Popsicle requests",
   "main": "popsicle-basic-auth.js",
+  "browser": {
+    "safe-buffer": false
+  },
   "typings": "popsicle-basic-auth.d.ts",
   "files": [
     "popsicle-basic-auth.js",
@@ -41,7 +44,9 @@
     "mocha": "^3.3.0",
     "nock": "^9.0.13",
     "popsicle": "^9.1.0",
-    "pre-commit": "^1.0.6",
     "standard": "^10.0.2"
+  },
+  "dependencies": {
+    "safe-buffer": "^5.0.1"
   }
 }
