@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Add basic authentication to Popsicle requests",
   "main": "popsicle-basic-auth.js",
+  "browser": {
+    "safe-buffer": false
+  },
   "typings": "popsicle-basic-auth.d.ts",
   "files": [
     "popsicle-basic-auth.js",
@@ -36,12 +39,14 @@
   },
   "homepage": "https://github.com/blakeembrey/popsicle-basic-auth",
   "devDependencies": {
-    "es6-promise": "^3.1.2",
+    "es6-promise": "^4.1.0",
     "istanbul": "^0.4.3",
-    "mocha": "^2.0.1",
-    "nock": "^8.0.0",
-    "popsicle": "^6.0.0",
-    "pre-commit": "^1.0.6",
-    "standard": "^7.0.1"
+    "mocha": "^3.3.0",
+    "nock": "^9.0.13",
+    "popsicle": "^9.1.0",
+    "standard": "^10.0.2"
+  },
+  "dependencies": {
+    "safe-buffer": "^5.0.1"
   }
 }
