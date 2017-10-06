@@ -41,7 +41,7 @@
   "devDependencies": {
     "es6-promise": "^4.1.0",
     "istanbul": "^0.4.3",
-    "mocha": "^3.3.0",
+    "mocha": "^4.0.0",
     "nock": "^9.0.13",
     "popsicle": "^9.1.0",
     "standard": "^10.0.2"
