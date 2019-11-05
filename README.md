@@ -4,7 +4,6 @@
 [![NPM downloads][downloads-image]][downloads-url]
 [![Build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
-[![Greenkeeper badge](https://badges.greenkeeper.io/blakeembrey/popsicle-basic-auth.svg)](https://greenkeeper.io/)
 
 > Add basic authentication to requests.
 
@@ -16,12 +15,12 @@ npm install popsicle-basic-auth --save
 
 ## Usage
 
-```javascript
-var request = require('popsicle')
-var auth = require('popsicle-basic-auth')
+```js
+import { middleware, toFetch } from "popsicle";
+import { Request } from "popsicle/dist/node";
+import { auth } from "popsicle-basic-auth";
 
-request('/users.json')
-  .use(auth('blakeembrey', 'hunter2'))
+const fetch = toFetch([auth("blakeembrey", "hunter2"), middleware], Request);
 ```
 
 ## License
