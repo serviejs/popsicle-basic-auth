@@ -31,7 +31,7 @@ MIT
 [npm-url]: https://npmjs.org/package/popsicle-basic-auth
 [downloads-image]: https://img.shields.io/npm/dm/popsicle-basic-auth.svg?style=flat
 [downloads-url]: https://npmjs.org/package/popsicle-basic-auth
-[travis-image]: https://img.shields.io/travis/blakeembrey/popsicle-basic-auth.svg?style=flat
-[travis-url]: https://travis-ci.org/blakeembrey/popsicle-basic-auth
-[coveralls-image]: https://img.shields.io/coveralls/blakeembrey/popsicle-basic-auth.svg?style=flat
-[coveralls-url]: https://coveralls.io/r/blakeembrey/popsicle-basic-auth?branch=master
+[travis-image]: https://img.shields.io/travis/serviejs/popsicle-basic-auth.svg?style=flat
+[travis-url]: https://travis-ci.org/serviejs/popsicle-basic-auth
+[coveralls-image]: https://img.shields.io/coveralls/serviejs/popsicle-basic-auth.svg?style=flat
+[coveralls-url]: https://coveralls.io/r/serviejs/popsicle-basic-auth?branch=master
